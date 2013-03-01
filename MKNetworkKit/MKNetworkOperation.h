@@ -242,6 +242,15 @@ typedef enum {
 @property (nonatomic, assign) BOOL shouldContinueWithInvalidCertificate;
 
 /*!
+ *  @abstract Boolean variable that states whether the operation should log call failures
+ *  @property failWithoutLogging
+ *
+ *  @discussion
+ *	If you set this property to YES, the operation will not log failed calls from operationFailedWithError.
+ */
+@property (nonatomic, assign) BOOL failWithoutLogging;
+
+/*!
  *  @abstract Cache headers of the response
  *  @property cacheHeaders
  *  
